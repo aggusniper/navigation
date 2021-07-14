@@ -1,0 +1,81 @@
+:root {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgb(83, 86, 131);
+    padding: 10px;   
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    border-top: 5px solid;
+    border-image: linear-gradient(45deg, rgb(82, 14, 61, .6), rgb(42, 17, 75,.99)) 1;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px 10px rgb(0, 0, 0, .1);
+}
+
+.logo-box {
+    width: 300px;
+    height: auto;
+}
+
+.logo-box h1 {
+    padding: 10px;
+    background: linear-gradient(80deg, rgb(157, 161, 163), rgb(15, 71, 175));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-self: end;
+}
+
+.navbar ul a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navbar ul a:link,
+.navbar ul a:visited {
+    color: #777;
+}
+
+.navbar ul a:hover {
+    color: #333;
+    transition: color 300ms;
+}
+
+.navbar ul li a svg {
+    width: 20px;
+    margin-left: 10px;
+}
